@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.filho{
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+p#ultimo{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
