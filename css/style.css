@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+:root{
+    /*Paleta de Cores: */
+    --vermelho: #E21C21;
+    --amarelo: #F2A007;
+    --verde-whatsapp: #02A25D;
+    --azul-gradiente: #382CBF;
+    --azul-idcontrol: #0069B4;
+    --cor-fundo: #292829;
+
+    /*Tipografia: */
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
 *{
     margin: 0;
     padding: 0;
