@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/*Importação de fontes: */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@400;500;700&display=swap');
 
+/*Variáveis CSS: */
 :root{
     /*Paleta de Cores: */
     --vermelho: #E21C21;
@@ -20,8 +22,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
+/*CSS Background: */
+main{
+    background-color: var(--cor-fundo);
+    background-image: url(../imagens/backgrounds/background-default.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+}
+
 
 div.filho{
     margin: 50px auto;
