@@ -1,12 +1,78 @@
 @charset "UTF-8";
 
-div{
-    width: 500px;
-    height: 573px;
-    margin: auto;
-    text-align: center;
-    padding-top: 200px;
-    color: white;
-    font-family: var(--montserrat);
-    font-size: 2em;
+@media (min-width: 320px) {
+
+    aside > p{
+        color: var(--vermelho);
+        font-family: var(--open-sans);
+        font-weight: none;
+        font-size: 0.8em;
+        margin: 20px 15px;
+    }
+
+    aside span{
+        color: white;
+    }
+
+    h1{
+        font-family: var(--open-sans);
+        font-weight: normal;
+        font-size: 1.3em;
+        color: white;
+
+        margin-left: 15px;
+        
+
+        display: inline;
+        border-bottom: 2.5px solid red;
+    }
+
+    div.cards{
+        width: 70%;
+        margin: 20px auto;
+        padding: 20px;
+
+        border-radius: 5px;
+
+        background-color: #49494949;
+
+        box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    h2{
+        font-family: var(--montserrat);
+        font-weight: normal;
+        font-size: 1.1em;
+        color: var(--vermelho);
+    }
+
+    .imgProduto{
+        display: block;
+        margin: 20px auto;
+    }
+
+    div.cards > p{
+        font-family: var(--open-sans);
+        font-weight: normal;
+        line-height: 25px;
+        color: white
+    }
+
+    div.botao{
+        width: 70%;
+        height: 34px;
+        border-radius: 10px;
+        background-color: var(--vermelho);
+
+        margin: 20px auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.botao > p{
+        color: white;
+        font-family: var(--montserrat);
+    }
 }

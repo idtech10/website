@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INVITEC</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="../imagens/logomarca/favicon-invitec.png" type="image/x-icon">
 </head>
 <body>
-    <div class="filho">
-            <h1>Site em construção...</h1>
-            <p>Em breve: invitec.com.br</p>
-    </div>
-    <p id="ultimo">By Henrique Cardoso and Arthur da Mata</p>
+    <div class="container" id="animacao" onclick="iniciarAnimacao()"></div>
+    <script>
+        function iniciarAnimacao() {
+            var elemento = document.getElementById("animacao")
+
+            elemento.classList.add('iniciar-animacao')
+
+            elemento.removeEventListener('click', iniciarAnimacao)
+        }
+    </script>
 </body>
 </html>

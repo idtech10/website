@@ -29,32 +29,20 @@ main{
     background-color: var(--cor-fundo);
     background-image: url(../imagens/backgrounds/background-default.png);
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 100%;
+    background-size: cover;
+    background-position: right center;
+    width: 100%;
 }
 
-
-div.filho{
-    margin: 50px auto;
-    padding: 20px;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.308);
-    border-radius: 10px;
-    width: 50%;
-    height: 300px;
-    position: relative;
+/*Links*/
+a{
+    font-family: var(--open-sans);
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
 }
 
-h1{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
-p#ultimo{
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+a:hover{
+    color: #791014;
+    text-decoration: underline;
 }
