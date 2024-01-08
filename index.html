@@ -4,20 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INVITEC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="../imagens/logomarca/favicon-invitec.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container" id="animacao" onclick="iniciarAnimacao()"></div>
-    <script>
-        function iniciarAnimacao() {
-            var elemento = document.getElementById("animacao")
+    <!--Cabeçalho-->
+    <header class="Header-Main">
+        <nav class="Header-Main__Nav">
+            <!--logo-->
+            <a href="index.html"><img class="Header-Main__Logo" src="#" alt=""></a>
 
-            elemento.classList.add('iniciar-animacao')
-
-            elemento.removeEventListener('click', iniciarAnimacao)
-        }
-    </script>
+            <!--butão hamburguer para mobile-->
+            <button class="Header-Main__Bnt">
+                <span class="Header-Main__Hamburger"></span>
+            </button>
+            <!--butões para outras paginas-->
+            <ul class="Header-Main__Options"> 
+                <li>
+                    <a href="#" class="dropDown dropDown--disable">Soluções</a>
+                    <ul class="dropDown-Options dropDown-Options--disable">
+                        <li><a href="#">Controle de acesso facial</a></li>
+                        <li><a href="#">Controle de acesso por proximidade</a></li>
+                        <li><a href="#">Controle de acesso biometrico</a></li>
+                        <li><a href="#">Controle de acesso por senha</a></li>
+                        <li><a href="#">Fechadura digital</a></li>
+                        <li><a href="#">Controle de acesso UHF</a></li>
+                        <li><a href="#">Softwares para controle de acesso</a></li>
+                        <li><a href="#">Cancelas</a></li>
+                        <li><a href="#">Catraca de acesso</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropDown dropDown--disable">Cases</a>
+                    <ul class="dropDown-Options dropDown-Options--disable">
+                        <li><a href=""></a>Colégio</li>
+                        <li><a href=""></a>Condominio</li>
+                        <li><a href=""></a>Governo</li>
+                        <li><a href=""></a>Corporativo</li>
+                    </ul>
+                </li>
+                <li><a href="#">Parcerias</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Saiba mais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p id="ultimo">By Henrique Cardoso and Arthur da Mata</p>
+    <script src="js/header.js"></script>
 </body>
 </html>

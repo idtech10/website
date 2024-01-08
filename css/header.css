@@ -1,0 +1,210 @@
+/*Header*/
+.Header-Main__Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 65px;
+    width: 95%;
+}
+.Header-Main__Options{
+    background-color: #292929a4;
+}
+.Header-Main__Options a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.5vw + 20px);
+    color: white;
+}
+.dropDown-Options > li{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #2E2E2E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.5vw + 20px);
+    color: white;
+}
+.dropDown-Options--active{
+    position: static;
+    transition: .3s;
+}
+.dropDown-Options--active > li{
+    opacity: 1;
+    transition: .1s;
+}
+.dropDown-Options--disable{
+    position: relative;
+    z-index: -1;
+    padding: 0px;
+    height: 0px;
+    
+}
+.dropDown-Options--disable > li{
+    padding: 0px;
+    height: 0px;
+    width: 0px;
+    font-size: 0;
+    opacity: 0;
+}
+.dropDown-Options--disable > li > a{
+    font-size: 0;
+}
+@media (min-width:320px) and (max-width: 800px) {
+    /*header*/
+    .Header-Main__Bnt{
+        display: flex;
+        padding: .10rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    .Header-Main__Logo{
+        height: 45px;
+    }
+
+    .Header-Main__Hamburger{
+        border-top: 4px solid #E21C21;
+        width: 40px;
+    }
+    .Header-Main__Hamburger::after, .Header-Main__Hamburger::before{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 4px;
+        background: #E21C21;
+        margin-top: 10px;
+        transition: .6s;
+        position: relative;
+    }
+    .Header-Main__Options{
+        display: block;
+        position: absolute;
+        box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.171);
+        width: 0px;
+        height: calc(100vh - 100px);
+        top: 66px;
+        right: 0px;
+        transition: .3s;
+        z-index: 1000 ; 
+        
+    }
+    .Header-Main__Options > li{
+        padding: 15px;
+        display: none;
+        border-bottom: 1px solid #494949;
+    }
+    
+    /*Animação hamburguer do menu*/
+    .Header-Main__Nav--Active .Header-Main__Options{
+        width: 70vw;
+    }
+    .Header-Main__Nav--Active .Header-Main__Options li{
+        display: block;
+    }
+    .Header-Main__Nav--Active .Header-Main__Hamburger{
+        border-top-color: transparent;
+    }
+    .Header-Main__Nav--Active .Header-Main__Hamburger::after{
+        transform: rotate(-130deg);
+        width: 20px;
+        top: -26px;
+        right: calc(70vw - 100px);
+    }
+    .Header-Main__Nav--Active .Header-Main__Hamburger::before{
+        transform: rotate(135deg);
+        width: 20px;
+        right: calc(70vw - 100px)
+    }
+
+
+}@media (min-width:801px) {
+    /*header*/
+    .Header-Main__Nav{
+        height: 80px;
+    }
+
+    .Header-Main__Logo{
+        height: 55px;
+    }
+
+    .Header-Main__Bnt{
+        display: none;
+    }
+    .Header-Main__Options{
+        display: flex;
+        background-color: #29292900;;
+    }
+
+    .Header-Main__Options a{
+        display: block;
+        font-size: calc(0.5vw + 13px);
+        padding: 15px;
+        transition: .2s;
+        border-bottom: 2px solid transparent;
+    }
+    .Header-Main__Options a:hover{
+        color: #E21C21;
+    }
+
+    .dropDown{
+        position: relative;
+    }
+
+    .dropDown-Options--active{
+        position: absolute;
+        z-index: 1;
+        transition: .3s;
+    }
+    .dropDown-Options--active > li{
+        opacity: 1;
+        transition: .1s;
+        transition-delay: .2s;
+    }
+    .dropDown-Options--active > li > a{
+        width: 300px;
+        padding: 0;
+    }
+
+
+    .dropDown-Options--disable{
+        position: relative;
+        z-index: -1;
+        padding: 0px;
+        
+    }
+    .dropDown-Options--disable > li{
+        padding: 0px;
+        opacity: 0;
+        transition: .1s;
+    }
+    .dropDown-Options--disable > li > a{
+        font-size: 0;
+        transition-delay: .1s;
+    }
+}@media (min-width:1025px) {
+    /*Header*/
+    .Header-Main__Logo{
+        height: 65px;
+    }
+    .Header-Main__Nav{
+        width: 90%;
+    }
+    .Header-Main__Options a{
+        font-size: calc(0.5vw + 15px);
+    }
+}@media (min-width:1281px) {
+    /*Header*/
+    .Header-Main__Options a{
+        font-size: 22px;
+    }
+
+    /*componentes comuns*/
+    .Tittle--Attack,.Tittle--Common{
+        font-size: 50px;
+    }
+    .Text--Common{
+        font-size: 18px;
+    }
+}
