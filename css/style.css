@@ -11,7 +11,8 @@
     --verde-whatsapp: #02A25D;
     --azul-gradiente: #382CBF;
     --azul-idcontrol: #0069B4;
-    --cor-fundo: #292829;
+    --cor-fundo: #292929;
+    --cor-fundo-transparente: #292929a4;
 
     /*Tipografia: */
     --montserrat: 'Montserrat', sans-serif;
@@ -44,5 +45,4 @@ a{
 
 a:hover{
     color: #791014;
-    text-decoration: underline;
 }

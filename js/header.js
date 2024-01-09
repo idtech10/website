@@ -3,8 +3,8 @@ let static = window.pageYoffset
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
-  const nav = document.querySelector('.Header-Main__Nav');
-  nav.classList.toggle('Header-Main__Nav--Active');
+  document.querySelector('.Header-Main__Nav').classList.toggle('Header-Main__Nav--Active');
+  btnMobile.classList.toggle('Header-Main__Bnt--active');
   scrollTo(0, static)
 }
 

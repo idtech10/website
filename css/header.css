@@ -1,20 +1,24 @@
-/*Header*/
+@import url(style.css);
+
+/*------------Header------------*/
 .Header-Main__Nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 15px auto 0;
     height: 65px;
-    width: 95%;
+    width: 90%;
 }
 .Header-Main__Options{
-    background-color: #292929a4;
+    background-color: var(--cor-fundo-transparente);
 }
 .Header-Main__Options a{
     font-family: 'Montserrat', sans-serif;
     font-size: calc(0.5vw + 20px);
     color: white;
 }
+
+/*------------dropdown------------*/
 .dropDown-Options > li{
     margin-top: 5px;
     padding: 10px;
@@ -36,7 +40,6 @@
     z-index: -1;
     padding: 0px;
     height: 0px;
-    
 }
 .dropDown-Options--disable > li{
     padding: 0px;
@@ -49,7 +52,7 @@
     font-size: 0;
 }
 @media (min-width:320px) and (max-width: 800px) {
-    /*header*/
+    /*------------Header------------*/
     .Header-Main__Bnt{
         display: flex;
         padding: .10rem 1rem;
@@ -61,11 +64,11 @@
     }
 
     .Header-Main__Logo{
-        height: 45px;
+        height: calc(40px + 2vw);
     }
 
     .Header-Main__Hamburger{
-        border-top: 4px solid #E21C21;
+        border-top: 4px solid var(--vermelho);
         width: 40px;
     }
     .Header-Main__Hamburger::after, .Header-Main__Hamburger::before{
@@ -73,7 +76,7 @@
         display: block;
         width: 40px;
         height: 4px;
-        background: #E21C21;
+        background: var(--vermelho);
         margin-top: 10px;
         transition: .6s;
         position: relative;
@@ -87,18 +90,25 @@
         top: 66px;
         right: 0px;
         transition: .3s;
-        z-index: 1000 ; 
+        z-index: 1; 
         
     }
     .Header-Main__Options > li{
         padding: 15px;
         display: none;
-        border-bottom: 1px solid #494949;
+        border-bottom: 1px solid var(--cor-fundo);
     }
     
-    /*Animação hamburguer do menu*/
+    .Header-Main__Bnt--active{
+        z-index: 2;
+    }
+
+    /*------------Animação hamburguer do menu------------*/
     .Header-Main__Nav--Active .Header-Main__Options{
         width: 70vw;
+        height: 100vh;
+        margin-top: -65px;
+        padding-top: 65px;
     }
     .Header-Main__Nav--Active .Header-Main__Options li{
         display: block;
@@ -120,15 +130,13 @@
 
 
 }@media (min-width:801px) {
-    /*header*/
+    /*------------Header------------*/
     .Header-Main__Nav{
         height: 80px;
     }
-
     .Header-Main__Logo{
-        height: 55px;
+        height: 5.5vw;
     }
-
     .Header-Main__Bnt{
         display: none;
     }
@@ -136,7 +144,6 @@
         display: flex;
         background-color: #29292900;;
     }
-
     .Header-Main__Options a{
         display: block;
         font-size: calc(0.5vw + 13px);
@@ -145,13 +152,13 @@
         border-bottom: 2px solid transparent;
     }
     .Header-Main__Options a:hover{
-        color: #E21C21;
+        color: var(--vermelho);
     }
 
+    /*------------DropDown------------*/
     .dropDown{
         position: relative;
     }
-
     .dropDown-Options--active{
         position: absolute;
         z-index: 1;
@@ -166,13 +173,10 @@
         width: 300px;
         padding: 0;
     }
-
-
     .dropDown-Options--disable{
         position: relative;
         z-index: -1;
         padding: 0px;
-        
     }
     .dropDown-Options--disable > li{
         padding: 0px;
@@ -184,9 +188,9 @@
         transition-delay: .1s;
     }
 }@media (min-width:1025px) {
-    /*Header*/
+    /*------------Header------------*/
     .Header-Main__Logo{
-        height: 65px;
+        height: 75px;
     }
     .Header-Main__Nav{
         width: 90%;
@@ -195,16 +199,11 @@
         font-size: calc(0.5vw + 15px);
     }
 }@media (min-width:1281px) {
-    /*Header*/
+    /*------------Header------------*/
     .Header-Main__Options a{
         font-size: 22px;
     }
-
-    /*componentes comuns*/
-    .Tittle--Attack,.Tittle--Common{
-        font-size: 50px;
-    }
-    .Text--Common{
-        font-size: 18px;
+    .Header-Main__Nav{
+        width: 85%;
     }
 }
