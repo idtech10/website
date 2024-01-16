@@ -14,7 +14,7 @@
 }
 .Header-Main__Options a{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(0.5vw + 20px);
+    font-size: var(--texto-destaque);
     color: white;
 }
 
@@ -24,7 +24,7 @@
     padding: 10px;
     background-color: #2E2E2E;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(0.5vw + 20px);
+    font-size: var(--texto-destaque);
     color: white;
 }
 .dropDown-Options--active{
@@ -146,8 +146,8 @@
     }
     .Header-Main__Options a{
         display: block;
-        font-size: calc(0.5vw + 13px);
-        padding: 15px;
+        font-size: var(--texto-destaque);
+        padding: 13px;
         transition: .2s;
         border-bottom: 2px solid transparent;
     }
@@ -196,12 +196,12 @@
         width: 90%;
     }
     .Header-Main__Options a{
-        font-size: calc(0.5vw + 15px);
+        font-size: var(--texto-destaque);
     }
 }@media (min-width:1281px) {
     /*------------Header------------*/
     .Header-Main__Options a{
-        font-size: 22px;
+        font-size: var(--texto-destaque);
     }
     .Header-Main__Nav{
         width: 85%;
