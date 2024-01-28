@@ -3,7 +3,7 @@
 
 
 @media (min-width:320px){
-    body{
+    .main{
         background-image: url("../imagens/backgrounds/background-default.png"); 
         background-color: #494949;
         background-position: bottom; 
@@ -11,7 +11,8 @@
         background-size: cover; 
     }
     .main__wrapper{
-        margin: 70px auto 80px;
+        padding: 165px 0 80px;
+        margin: 0px auto 0px;
         display: grid;
         width: 90vw;
         max-width: 1400px;
@@ -69,6 +70,50 @@
         line-height: 1.2;
     }
 
+    .solutions{
+        background-image: url("../imagens/backgrounds/background__solutions.png"); 
+        background-color: #494949;
+        background-position: bottom; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        padding: 50px 0;
+    }
+    .solutions h1{
+        font-size: var(--titulo-secundario);
+        font-weight: 600;
+        font-family: var(--montserrat);
+        color: white;
+        margin: 50px;
+        text-align: center;
+    }
+    .solutions__buttons{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .solutions__buttons input{
+        margin: 15px;
+        width: 140px;
+        height: 50px;
+        font-size: var(--texto-destaque);
+        font-family: var(--montserrat);
+        text-align: center;
+        color: #fff;
+        background-color: transparent;
+        border: 3px solid var(--vermelho);
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .solutions__buttons input:hover{
+        background: var(--vermelho);
+        background: -moz-linear-gradient(138deg, rgba(226,28,33,1) 42%, rgba(113,39,138,0.8953956582633054) 100%);
+        background: -webkit-linear-gradient(138deg, rgba(226,28,33,1) 42%, rgba(113,39,138,0.8953956582633054) 100%);
+        background: linear-gradient(138deg, rgba(226,28,33,1) 42%, rgba(113,39,138,0.8953956582633054) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e21c21",endColorstr="#71278a",GradientType=1);
+        border: none;
+    }
 
 }@media (min-width:600px) {
     .main__wrapper{
@@ -82,6 +127,14 @@
     }
     .main__solutions{
         margin-top: 0;
+    }
+
+    .solutions__buttons{
+        width: 85%;
+    }
+    .solutions__buttons input{
+        width: 153px;
+        height: 55px;
     }
 }@media (min-width:801px) {
     .main__wrapper{
@@ -116,9 +169,21 @@
     .main__solutions input{
         display: none;
     }
+
+    .solutions{
+        padding: 70px 0 90px;
+    }
+    .solutions__buttons{
+        width: 80%;
+    }
+    .solutions__buttons input{
+        width: 160px;
+        height: 57px;
+    }
 }@media (min-width:1025px) {
     .main__wrapper{
-        margin: 100px auto 140px;
+        padding: 195px 0 140px;
+        margin: 0px auto 0px;
         grid-template:
         "introduction img" 40%
         "solutions img" auto;
@@ -131,8 +196,25 @@
         justify-content: start;
     }
 
+    .solutions__buttons{
+        width: 70%;
+        max-width: 1100px;
+    }
+    .solutions__buttons input{
+        width: 180px;
+        height: 59px;
+    }
 }@media (min-width:1281px) {
     .main__wrapper{
-        margin: 120px auto 190px;
+        padding: 215px 0 190px;
+        margin: 0px auto 0px;
+    }
+
+    .solutions{
+        padding: 90px 0 120px;
+    }
+    .solutions__buttons input{
+        width: 220px;
+        height: 62px;
     }
 }
