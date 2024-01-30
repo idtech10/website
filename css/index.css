@@ -193,6 +193,7 @@
     }
     .main__img{
         width: 330px;
+        height: auto;
     }
     .main__solutions{
         align-items: start;

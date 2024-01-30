@@ -70,6 +70,7 @@
 
     .Header-Main__Logo{
         height: calc(40px + 2vw);
+        width:none;
     }
 
     .Header-Main__Hamburger{
@@ -141,6 +142,7 @@
     }
     .Header-Main__Logo{
         height: 5.5vw;
+        width: auto;
     }
     .Header-Main__Bnt{
         display: none;
